@@ -4,20 +4,26 @@ Docker installation
 
 First docker container
 
-# docker images 
 This will show all the images.
-# docker pull nginx:alpine
+# docker images 
+
 This will pull nginx alpine images
-# docker ps -l
+# docker pull nginx:alpine
+
 This will show container
-# docker rm container id
+# docker ps -l
+
 This will remove container
-# docker rmi nginx:alpine
+# docker rm container id
+
 This will remove nginx:alpine image
-# docker run -d nginx:alpine
+# docker rmi nginx:alpine
+
 This will pull image from docker hub and run a container if image not available locally. and it will take a randam name if did not provide any tag
-# docker run -d -p 9090:80 nginx:alpine
+# docker run -d nginx:alpine
+
 This will map port 80 to 9090, here 80 is container port and 9090 is local host port
+# docker run -d -p 9090:80 nginx:alpine
 
 
 
